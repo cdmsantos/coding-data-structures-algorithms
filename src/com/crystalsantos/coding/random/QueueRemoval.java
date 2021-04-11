@@ -1,3 +1,5 @@
+package com.crystalsantos.coding.random;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -82,25 +84,20 @@ public class QueueRemoval {
 	}
 
 	public void run() {
-		int n_1 = 6;
 		int x_1 = 5;
 		int[] arr_1 = { 1, 2, 2, 3, 4, 5 };
 		int[] expected_1 = { 5, 6, 4, 1, 2 };
 		int[] output_1 = findPositions(arr_1, x_1);
 		check(expected_1, output_1);
 
-		int n_2 = 13;
 		int x_2 = 4;
 		int[] arr_2 = { 2, 4, 2, 4, 3, 1, 2, 2, 3, 4, 3, 4, 4 };
 		int[] expected_2 = { 2, 5, 10, 13 };
 		int[] output_2 = findPositions(arr_2, x_2);
 		check(expected_2, output_2);
-
-		// Add your own test cases here
-
 	}
 
 	public static void main(String[] args) {
-		new Main().run();
+		new QueueRemoval().run();
 	}
 }

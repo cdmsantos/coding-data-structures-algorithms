@@ -1,4 +1,4 @@
-import java.util.*;
+package com.crystalsantos.coding.random;
 
 public class RotationalCipher {  
 
@@ -78,13 +78,10 @@ public class RotationalCipher {
     int rotationFactor_2 = 200;
     String expected_2 = "stuvRPQrpq-999.@";
     String output_2 = rotationalCipher(input_2, rotationFactor_2);
-    check(expected_2, output_2);
-
-    // Add your own test cases here
-    
+    check(expected_2, output_2);    
   }
   
   public static void main(String[] args) {
-    new Main().run();
+    new RotationalCipher().run();
   }
 }

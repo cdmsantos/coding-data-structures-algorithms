@@ -1,5 +1,7 @@
-import java.io.*;
-import java.util.*;
+package com.crystalsantos.coding.random;
+
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class QuickSort2 {
 
@@ -14,7 +16,7 @@ public class QuickSort2 {
         }
         
         quickSort(array);
-
+        scanner.close();
     }
         
     static void printArray(int[] ar,int start, int end) { 

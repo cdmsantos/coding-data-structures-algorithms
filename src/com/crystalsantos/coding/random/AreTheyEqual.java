@@ -1,10 +1,6 @@
-import java.io.*;
-import java.util.*;
-// Add any extra import statements you may need here
+package com.crystalsantos.coding.random;
 
 public class AreTheyEqual {
-
-	// Add any helper functions you may need here
 
 	boolean areTheyEqual(int[] array_a, int[] array_b) {
 		if(array_a.length != array_b.length) {
@@ -28,8 +24,6 @@ public class AreTheyEqual {
 		}
 	}
 
-	// These are the tests we use to determine if the solution is correct.
-	// You can add your own at the bottom, but they are otherwise not editable!
 	int test_case_number = 1;
 
 	void check(boolean expected, boolean output) {
@@ -60,11 +54,9 @@ public class AreTheyEqual {
 		boolean expected_2 = false;
 		boolean output_2 = areTheyEqual(array_a_2, array_b_2);
 		check(expected_2, output_2);
-		// Add your own test cases here
-
 	}
 
 	public static void main(String[] args) {
-		new Main().run();
+		new AreTheyEqual().run();
 	}
 }

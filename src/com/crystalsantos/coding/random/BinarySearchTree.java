@@ -1,3 +1,5 @@
+package com.crystalsantos.coding.random;
+
 public class BinarySearchTree {
 	class Node {
 
@@ -40,6 +42,7 @@ public class BinarySearchTree {
 					right.contains(searchData);
 				}
 			}
+			return false;
 		}
 
 		public void printInOrder() {

@@ -1,5 +1,7 @@
-import java.io.*;
-import java.util.*;
+package com.crystalsantos.coding.random;
+
+import java.util.Scanner;
+import java.util.Stack;
 
 public class QueueUsingTwoStacks {
 

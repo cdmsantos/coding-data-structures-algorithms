@@ -1,5 +1,6 @@
-import java.util.*;
-import java.io.*;
+package com.crystalsantos.coding.random;
+
+import java.util.Scanner;
 
 public class BinarySearchTreeInsertion {
    

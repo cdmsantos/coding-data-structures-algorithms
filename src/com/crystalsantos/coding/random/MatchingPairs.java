@@ -1,5 +1,7 @@
-import java.io.*;
-import java.util.*;
+package com.crystalsantos.coding.random;
+
+import java.util.HashSet;
+import java.util.Set;
 // Add any extra import statements you may need here
 
 public class MatchingPairs {

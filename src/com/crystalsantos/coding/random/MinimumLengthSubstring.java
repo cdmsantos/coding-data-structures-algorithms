@@ -1,10 +1,8 @@
-import java.io.*;
-import java.util.*;
-// Add any extra import statements you may need here
+package com.crystalsantos.coding.random;
+
+import java.io.IOException;
 
 public class MinimumLengthSubstring {
-
-	// Add any helper functions you may need here
 
 	int minLengthSubstring(String s, String t) {
 		if(t.length() > s.length()) {
@@ -72,12 +70,9 @@ public class MinimumLengthSubstring {
 		int expected_2 = -1;
 		int output_2 = minLengthSubstring(s_2, t_2);
 		check(expected_2, output_2);
-
-		// Add your own test cases here
-
 	}
 
 	public static void main(String[] args) throws IOException {
-		new Main().run();
+		new MinimumLengthSubstring().run();
 	}
 }

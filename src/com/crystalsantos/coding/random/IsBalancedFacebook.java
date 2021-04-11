@@ -1,5 +1,6 @@
-import java.io.*;
-import java.util.*;
+package com.crystalsantos.coding.random;
+
+import java.util.Stack;
 
 public class IsBalancedFacebook {
 	boolean isBalanced(String s) {
@@ -23,8 +24,6 @@ public class IsBalancedFacebook {
 		return true;
 	}
 
-	// These are the tests we use to determine if the solution is correct.
-	// You can add your own at the bottom, but they are otherwise not editable!
 	int test_case_number = 1;
 
 	void check(boolean expected, boolean output) {
@@ -57,11 +56,9 @@ public class IsBalancedFacebook {
 		boolean expected_2 = true;
 		boolean output_2 = isBalanced(s_2);
 		check(expected_2, output_2);
-
-		// Add your own test cases here
-
 	}
 
 	public static void main(String[] args) {
-		new Main().run();
+		new IsBalancedFacebook().run();
 	}
+}
