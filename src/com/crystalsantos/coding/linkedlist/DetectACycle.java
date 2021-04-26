@@ -1,5 +1,7 @@
 package com.crystalsantos.coding.linkedlist;
 
+import java.util.HashSet;
+
 public class DetectACycle {
 	static class Node {
 		public int data;
@@ -10,26 +12,16 @@ public class DetectACycle {
 			this.next = null;
 		}
 	}
-	
+
 	boolean hasCycle(Node head) {
-		boolean cycle = false;
-		
-		if(head == null || head.next == null) {
-			return cycle;
+		HashSet<Node> hashNode = new HashSet<>();
+		while (head != null) {
+			if (hashNode.contains(head)) {
+				return true;
+			}
+			hashNode.add(head);
+			head = head.next;
 		}
-		
-		Node pointerOne = head;
-		Node pointerTwo = head;
-		
-		while(pointerTwo != null && pointerTwo.next != null) {
-			pointerOne = pointerOne.next;
-            pointerTwo = pointerTwo.next.next;
-            
-            if(pointerOne == pointerTwo) {
-                return true;
-            }
-		}
-		
-		return cycle;
+		return false;
 	}
 }
