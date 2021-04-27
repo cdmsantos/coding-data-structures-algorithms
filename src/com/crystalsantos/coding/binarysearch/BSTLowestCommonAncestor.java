@@ -1,4 +1,4 @@
-package com.crystalsantos.coding.trees;
+package com.crystalsantos.coding.binarysearch;
 
 import java.util.Scanner;
 
@@ -21,19 +21,19 @@ public class BSTLowestCommonAncestor {
 		if ((v1 > root.data && v2 < root.data) || (v1 < root.data && v2 > root.data)) {
 			return root;
 		}
-		
+
 		// goes to same side
-		if(v1 > root.data && v2 > root.data) { //right
+		if (v1 > root.data && v2 > root.data) { // right
 			return lca(root.right, v1, v2);
 		}
-		
-		if(v1 < root.data && v2 < root.data) { //left
+
+		if (v1 < root.data && v2 < root.data) { // left
 			return lca(root.left, v1, v2);
 		}
 
 		return root;
 	}
-	
+
 	public static Node insert(Node root, int data) {
 		if (root == null) {
 			return new Node(data);

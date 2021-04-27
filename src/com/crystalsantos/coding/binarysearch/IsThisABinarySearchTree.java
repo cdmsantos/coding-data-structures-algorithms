@@ -1,4 +1,4 @@
-package com.crystalsantos.coding.trees;
+package com.crystalsantos.coding.binarysearch;
 
 import java.util.ArrayList;
 import java.util.Scanner;

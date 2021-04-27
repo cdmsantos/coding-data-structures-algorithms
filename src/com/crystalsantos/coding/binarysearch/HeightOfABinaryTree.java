@@ -1,4 +1,4 @@
-package com.crystalsantos.coding.trees;
+package com.crystalsantos.coding.binarysearch;
 
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ public class HeightOfABinaryTree {
         
         if(root.left != null || root.right != null) {
             
-              if(root.left != null) {
+            if(root.left != null) {
                leftHeight = 1 + height(root.left);
             }
             
