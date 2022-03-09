@@ -35,8 +35,9 @@ public class DepthFirstSearch {
 		Iterator<Integer> i = adj[v].listIterator();
 		while (i.hasNext()) {
 			int n = i.next();
-			if (!visited[n])
+			if (!visited[n]) {
 				DFSUtil(n, visited);
+			}
 		}
 	}
 
