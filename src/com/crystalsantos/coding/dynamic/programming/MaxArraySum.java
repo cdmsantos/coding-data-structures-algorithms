@@ -1,4 +1,4 @@
-package com.crystalsantos.coding.dynamic.programmin;
+package com.crystalsantos.coding.dynamic.programming;
 
 import java.io.IOException;
 import java.util.Scanner;
