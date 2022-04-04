@@ -1,8 +1,6 @@
 package com.crystalsantos.coding.others;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * Missing Number
@@ -49,8 +47,8 @@ public class MissingNumber {
 
 	public static void main(String[] args) {
 		MissingNumber missing = new MissingNumber();
-		System.out.println(missing.missingNumber(new int[] { 3, 0, 1 })); //2
-		System.out.println(missing.missingNumber(new int[] { 0, 1 })); //2
-		System.out.println(missing.missingNumber(new int[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 })); //8
+		System.out.println(missing.missingNumber(new int[] { 3, 0, 1 })); // 2
+		System.out.println(missing.missingNumber(new int[] { 0, 1 })); // 2
+		System.out.println(missing.missingNumber(new int[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 })); // 8
 	}
 }
