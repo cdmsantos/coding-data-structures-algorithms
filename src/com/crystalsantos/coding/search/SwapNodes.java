@@ -42,22 +42,22 @@ public class SwapNodes {
 		swapSubtrees(tree, k, 1, 1);
 	}
 
-	static void swapSubtrees(Node[] tree, int k, int d, int i) {
-		if (i == -1)
+	static void swapSubtrees(Node[] tree, int k, int depth, int index) {
+		if (index == -1)
 			return;
 
-		Node node = tree[i];
+		Node node = tree[index];
 
 		// swap subtrees at depth h where h = 1k, 2k, 3k, ...
-		if (d % k == 0) {
+		if (depth % k == 0) {
 			int tmp = node.leftIndex;
 			node.leftIndex = node.rightIndex;
 			node.rightIndex = tmp;
 		}
 
 		// traverse and increment depth
-		swapSubtrees(tree, k, d + 1, node.leftIndex);
-		swapSubtrees(tree, k, d + 1, node.rightIndex);
+		swapSubtrees(tree, k, depth + 1, node.leftIndex);
+		swapSubtrees(tree, k, depth + 1, node.rightIndex);
 	}
 
 	static void printTree(Node[] tree) {
